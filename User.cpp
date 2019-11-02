@@ -35,7 +35,7 @@ int main(int argc, char * argv[]) {
     size_t total_size;
 
     bool force_quit;
-    bool quit;
+    bool quit = false;
 
     // To be changed
     const char * server_IP = "127.0.0.1";
@@ -71,7 +71,7 @@ int main(int argc, char * argv[]) {
     while (!quit) {
         // Clear the buffers
 
-//        std::cout << "#1" << std::endl;
+        //std::cout << "#1" << std::endl;
         total_size = 0;
         memset(&outBuffer, 0, BUFFERSIZE);
         memset(&inBuffer, 0, BUFFERSIZE);

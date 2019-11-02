@@ -153,6 +153,7 @@ void initServer(int& serverSock, int port)
         std::cout << "listen() failed" << std::endl;
         exit(1);
     }
+    std::cout << "Server has started" << std::endl;
 }
 
 void processSockets (fd_set readySocks)
